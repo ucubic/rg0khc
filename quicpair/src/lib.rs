@@ -5,7 +5,6 @@
 
 use std::sync::LazyLock;
 
-
 /// The parameter to a `from_*` function was not a valid value of the type.
 #[derive(Debug)]
 pub struct Invalid;
