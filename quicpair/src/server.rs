@@ -1,4 +1,4 @@
-use std::{collections::HashMap, hash::DefaultHasher, net::SocketAddr, sync::Arc};
+use std::{collections::HashMap, net::SocketAddr, sync::Arc};
 
 use anyhow::{Context, Error, Result};
 use quinn::{
@@ -6,10 +6,6 @@ use quinn::{
     rustls::pki_types::{CertificateDer, PrivatePkcs8KeyDer},
 };
 use tokio::{sync::mpsc, task::JoinHandle};
-use x509_parser::{
-    der_parser::oid,
-    x509::{self, AlgorithmIdentifier},
-};
 
 use crate::{ClientId, Signature};
 
