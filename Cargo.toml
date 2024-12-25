@@ -1,6 +1,10 @@
-[package]
-name = "rg0khc"
-version = "0.1.0"
-edition = "2021"
 
-[dependencies]
+[workspace]
+members = ["rg0khc", "quicpair"]
+resolver = "3"
+
+[workspace.package]
+edition = "2024"
+
+[workspace.dependencies]
+tokio = { version = "1.42.0", features = ["macros"] }

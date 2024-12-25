@@ -1,0 +1,9 @@
+[package]
+name = "rg0khc"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+quicpair = { path = "../quicpair" }
+cpal = "0.15.3"
+tokio = { workspace = true }
